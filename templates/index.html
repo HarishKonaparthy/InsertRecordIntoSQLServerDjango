@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inser records</title>
+    </head>
+    <body>
+        <center>
+            <h1>
+                How to Insert records to database
+            </h1>
+            <hr/>
+            <form method="post">
+                {% csrf_token %}
+            <table border="1">
+                <tr>
+                    <td>Student name</td>
+                    <td><input type="text" placeholder="Student Name.." name="stname"></td>
+                </tr>
+                <tr>
+                    <td>Student email</td>
+                    <td><input type="text" placeholder="Student email.." name="stemail"></td>
+                </tr>
+                <tr>
+                    <td>Student Mobile</td>
+                    <td><input type="text" placeholder="Student Mobile.." name="stmob"></td>
+                </tr>
+            </table>
+            <hr/>
+            <input type="submit" value="Insert" onclick="return alert('Record is saved successfully')"/>
+        </form>
+        </center>
+    </body>
+</html>
